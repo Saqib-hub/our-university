@@ -941,6 +941,173 @@
         .footer-bottom a:hover { color: #2563eb; }
         .logo { font-size: 1.2rem; font-weight: 700; text-align: center; margin: 15px 0; }
         .logo span { color: #2563eb; }
+
+        /* ========== MOBILE RESPONSIVE FIX ========== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .hero-content h1 { font-size: 2.4rem; }
+    .services-grid, .package-grid, .pricing-grid, .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (Phone) */
+@media (max-width: 768px) {
+    /* Header & Nav */
+    header { padding: 15px 0; }
+    .header-inner { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 15px;
+    }
+    .logo-container img { width: 45px; height: 45px; }
+    .logo-text { font-size: 1.2rem; }
+    
+    .nav-links { 
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    /* Hero */
+    .hero { padding: 40px 0; border-radius: 0 0 24px 24px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+    .hero-content h1 { font-size: 1.8rem; line-height: 1.3; }
+    .hero-content p { font-size: 0.95rem; }
+    .hero-badges { 
+        flex-direction: column; 
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+    
+    /* Consultation Card */
+    .consult-card { padding: 24px 20px; }
+    .consult-card h3 { font-size: 1.2rem; }
+    
+    /* Section Titles */
+    .section-title { margin: 40px 0 25px; }
+    .section-title h2 { font-size: 1.6rem; }
+    .section-title p { font-size: 0.9rem; }
+    
+    /* Services */
+    .services-grid { grid-template-columns: 1fr; gap: 16px; }
+    .service-card { padding: 24px 18px; }
+    .service-icon { width: 50px; height: 50px; }
+    .service-icon i { font-size: 1.5rem; }
+    .service-card h3 { font-size: 1rem; }
+    
+    /* All-in-One */
+    .all-in-one { padding: 30px 20px; margin: 40px 0; border-radius: 20px; }
+    .all-in-one h2 { font-size: 1.5rem; }
+    .package-grid { grid-template-columns: 1fr; gap: 20px; }
+    .package-col h4 { font-size: 1rem; }
+    
+    /* Pricing */
+    .pricing-grid { grid-template-columns: 1fr; gap: 20px; }
+    .pricing-card { padding: 24px 20px; }
+    .pricing-card h3 { font-size: 1.1rem; }
+    .price { font-size: 1.8rem; }
+    
+    /* Courses Page */
+    .courses-grid { grid-template-columns: 1fr; gap: 20px; }
+    .course-image { height: 180px; }
+    .course-content { padding: 18px; }
+    .course-content h3 { font-size: 1.1rem; }
+    
+    /* Video Grid - Mobile */
+    .video-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+    .video-card video { height: 200px !important; }
+    
+    /* Course Detail */
+    .course-detail-grid { grid-template-columns: 1fr; gap: 30px; }
+    .course-detail-content h1 { font-size: 1.6rem; }
+    .course-detail-meta { gap: 12px; font-size: 0.85rem; }
+    .course-detail-actions { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 15px;
+    }
+    .course-price-large { font-size: 1.5rem; }
+    .btn-enroll { width: 100%; justify-content: center; }
+    
+    /* Contact */
+    .contact-wrapper { grid-template-columns: 1fr; gap: 0; }
+    .contact-info { padding: 30px 22px; }
+    .contact-info h2 { font-size: 1.5rem; }
+    .contact-info h3 { font-size: 1rem; }
+    .contact-form-box { padding: 24px 20px; }
+    .form-row { grid-template-columns: 1fr; gap: 12px; }
+    .form-actions { flex-direction: column; }
+    .form-actions input[type="submit"],
+    .form-actions button { width: 100%; }
+    
+    /* Founders */
+    .founder-container { 
+        flex-direction: column; 
+        text-align: center; 
+        padding: 24px 20px;
+        gap: 20px;
+    }
+    .founder-img { width: 120px; height: 120px; }
+    .special { font-size: 1.1rem; text-align: center; }
+    .founder-text h4 { font-size: 0.85rem; }
+    .sm-handle { justify-content: center; }
+    
+    /* Table */
+    .table-container { padding: 10px; }
+    table { font-size: 0.75rem; }
+    th, td { padding: 8px 6px; }
+    
+    /* Stats */
+    .stats-section { 
+        flex-direction: column; 
+        gap: 20px; 
+        padding: 30px 20px;
+    }
+    .stats-box h2 { font-size: 2rem; }
+    
+    /* Footer */
+    .footer-container { 
+        grid-template-columns: 1fr; 
+        text-align: center; 
+        gap: 30px;
+    }
+    .footer-social { flex-wrap: wrap; }
+    .footer-bottom { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 10px;
+    }
+    
+    /* Toast */
+    .toast { 
+        left: 15px; 
+        right: 15px; 
+        bottom: 15px; 
+        font-size: 0.85rem;
+        padding: 12px 18px;
+    }
+    
+    /* Container Padding */
+    .container { padding: 0 16px; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .hero-content h1 { font-size: 1.5rem; }
+    .section-title h2 { font-size: 1.3rem; }
+    .logo-text { font-size: 1rem; }
+    .video-card video { height: 180px !important; }
+    table { font-size: 0.7rem; }
+    th, td { padding: 6px 4px; }
+}
     </style>
 </head>
 <body>
